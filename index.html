@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Rock Paper Scissors Game</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div id="gameContainer" role="main" aria-label="Rock Paper Scissors game">
+    <header>
+      <h1>Rock Paper Scissors</h1>
+      <p>Choose your weapon!</p>
+    </header>
+    <section id="choices" role="group" aria-label="Choose Rock, Paper or Scissors">
+      <button class="choice-btn" id="rock" aria-pressed="false" aria-label="Choose Rock" title="Rock">
+        <span class="emoji" aria-hidden="true">✊</span>
+      </button>
+      <button class="choice-btn" id="paper" aria-pressed="false" aria-label="Choose Paper" title="Paper">
+        <span class="emoji" aria-hidden="true">✋</span>
+      </button>
+      <button class="choice-btn" id="scissors" aria-pressed="false" aria-label="Choose Scissors" title="Scissors">
+        <span class="emoji" aria-hidden="true">✌️</span>
+      </button>
+    </section>
+    <section id="resultDisplay" aria-live="polite" aria-atomic="true">
+      <p>Your Choice: <span id="userChoice">?</span></p>
+      <p>Computer Choice: <span id="computerChoice">?</span></p>
+      <p id="resultMessage"></p>
+    </section>
+    <section id="scoreboard" aria-label="Scoreboard">
+      <div>
+        <div>Player</div>
+        <span class="number" id="playerScore">0</span>
+      </div>
+      <div>
+        <div>Draws</div>
+        <span class="number" id="drawScore">0</span>
+      </div>
+      <div>
+        <div>Computer</div>
+        <span class="number" id="computerScore">0</span>
+      </div>
+    </section>
+    <footer id="footer">Made with ❤️ - Play fair!</footer>
+  </div>
+
+  <script src="script.js"></script>
+  <script src="app.py"></script>
+</body>
+</html>
